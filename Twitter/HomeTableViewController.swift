@@ -12,13 +12,18 @@ class HomeTableViewController: UITableViewController {
     
     var tweetArray = [NSDictionary]()
     var numberOfTweets: Int!
+    // to implement pull to refresh
+    let pullToRefresh = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         loadTweet()
+        
+        pullToRefresh.addTarget(self, action: #selector(loadTweet), for: .valueChanged)
+        tableView.refreshControl = pullToRefresh
     }
     
-    func loadTweet() {
+    @objc func loadTweet() {
         let tweetsAPI = "https://api.twitter.com/1.1/statuses/home_timeline.json"
         let params = ["count": 10]
         
@@ -32,6 +37,8 @@ class HomeTableViewController: UITableViewController {
             }
             
             self.tableView.reloadData()
+            // to stop the spinning wheel from infinitely spinning after we refresh once
+            self.pullToRefresh.endRefreshing()
         },
         failure: { (Error) in
             print(Error.localizedDescription)
