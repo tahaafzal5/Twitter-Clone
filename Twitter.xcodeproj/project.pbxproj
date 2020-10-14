@@ -357,14 +357,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EJTT2N9E3L;
+				DEVELOPMENT_TEAM = 7G9293FBQG;
 				INFOPLIST_FILE = Twitter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.TwitterTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.TwitterTestAppCodePath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -377,14 +377,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EJTT2N9E3L;
+				DEVELOPMENT_TEAM = 7G9293FBQG;
 				INFOPLIST_FILE = Twitter/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.TwitterTestApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.TwitterTestAppCodePath;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
